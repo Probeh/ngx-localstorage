@@ -1,0 +1,28 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib",
+    "target": "es2020",
+    "module": "es2020",
+    "declaration": true,
+    "inlineSources": true,
+    // ======================================= //
+    "declarationMap": false,
+    "sourceMap": false,
+    "declarationDir": "types",
+    // ======================================= //
+    "types": [],
+    "lib": ["dom", "es2018"],
+    "paths": {
+      "@models/*": ["./src/models/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true
+  },
+  "exclude": ["src/test.ts", "**/*.spec.ts"]
+}
